@@ -1,15 +1,46 @@
 
-public class Employee
-{
+public class Employee {
+	int empid;
+	String firstName;
+	String lastName;
+		static int count=0;	
+	int salary;
+	char grade;
+	int dd, mm, yyyy;
+	
+public Employee() {
 
-	public Employee(int id, String fName, String sName, double Salary, char Grade, String jDate)
-	{
-		System.out.println("The id of employee is       :"+ id);
-		System.out.println("The fName of employee is    :"+ fName);
-		System.out.println("The sName of employee is    :"+ sName);
-		System.out.println("The Salary of employee is   :"+ Salary);
-		System.out.println("The grade of employee is    :"+ Grade);
-		System.out.println("The jDate of employee is    :"+ jDate);
-		System.out.println("----------------------------------------------------------------");
-	}
+	firstName= "";
+	lastName="";
+	salary=0;
+	grade= ' ';
+			
+}
+public Employee(String fn, String ln, int sal, char grade, int dd, int mm, int yyyy) {
+	
+	this.firstName=fn;
+	this.lastName=ln;
+	this.salary=sal;
+	this.grade=grade;
+	this.dd=dd;
+	this.mm=mm;
+	this.yyyy=yyyy;
+	
+}
+public void displayDetails() {
+		
+	count++;
+	system.out.println("empid :" + count);
+	system.out.println("firstName :" + firstName);
+	system.out.println("lastName :" + lastName);
+	system.out.println("salary :" + salary);
+	system.out.println("grade :" + grade);
+	system.out.println("Date :" +dd+ "/" +mm "/" +yyyy);
+	
+}	
+public Invoice[] getInvoices() {
+	return null;
+	
+}
+class Invoice
 }
